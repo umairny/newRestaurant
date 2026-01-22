@@ -1,0 +1,98 @@
+.about-page {
+    min-height: 100vh;
+    padding: var(--spacing-2xl) 0;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.about-header h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: var(--font-heading);
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-subtitle {
+    color: var(--accent-gold);
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-story {
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.about-story h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--accent-gold);
+    margin-bottom: var(--spacing-md);
+}
+
+.about-story p {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.about-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.value-card {
+    padding: var(--spacing-xl);
+    text-align: center;
+}
+
+.value-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-gold);
+}
+
+.value-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.value-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.about-team {
+    padding: var(--spacing-xl);
+}
+
+.about-team h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--accent-gold);
+    margin-bottom: var(--spacing-md);
+}
+
+.about-team p {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    line-height: 1.8;
+}
