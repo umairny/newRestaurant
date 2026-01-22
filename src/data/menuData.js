@@ -1,3 +1,5 @@
+const getImagePath = (path) => `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.slice(1) : path}`;
+
 export const menuData = {
   starters: [
     {
@@ -5,7 +7,7 @@ export const menuData = {
       name: 'Mediterranean Platter',
       description: 'Artisan bruschetta, imported cheeses, cured meats, and marinated olives with fresh herbs',
       price: 18.99,
-      image: '/images/appetizer_platter_1768588200466.png',
+      image: getImagePath('images/appetizer_platter_1768588200466.png'),
       category: 'Starters'
     },
     {
@@ -13,7 +15,7 @@ export const menuData = {
       name: 'Caprese Salad',
       description: 'Fresh mozzarella, heirloom tomatoes, basil, balsamic reduction',
       price: 12.99,
-      image: '/images/Caprese_Salad.png',
+      image: getImagePath('images/Caprese_Salad.png'),
       category: 'Starters'
     },
     {
@@ -21,7 +23,7 @@ export const menuData = {
       name: 'Lobster Bisque',
       description: 'Creamy lobster soup with cognac, finished with crème fraîche',
       price: 14.99,
-      image: '/images/Lobster_Bisque.png',
+      image: getImagePath('images/Lobster_Bisque.png'),
       category: 'Starters'
     }
   ],
@@ -31,7 +33,7 @@ export const menuData = {
       name: 'Prime Ribeye Steak',
       description: 'Premium 12oz ribeye, herb-roasted mushrooms, asparagus, truffle mashed potatoes',
       price: 42.99,
-      image: '/images/steak_main_dish_1768588159526.png',
+      image: getImagePath('images/steak_main_dish_1768588159526.png'),
       category: 'Mains'
     },
     {
@@ -39,7 +41,7 @@ export const menuData = {
       name: 'Herb-Grilled Chicken',
       description: 'Succulent chicken breast with seasonal vegetables, balsamic glaze',
       price: 26.99,
-      image: '/images/grilled_chicken_1768588186487.png',
+      image: getImagePath('images/grilled_chicken_1768588186487.png'),
       category: 'Mains'
     },
     {
@@ -47,7 +49,7 @@ export const menuData = {
       name: 'Pan-Seared Salmon',
       description: 'Atlantic salmon, lemon butter sauce, quinoa, roasted vegetables',
       price: 32.99,
-      image: '/images/Pan-Seared_Salmon.png',
+      image: getImagePath('images/Pan-Seared_Salmon.png'),
       category: 'Mains'
     },
     {
@@ -55,9 +57,9 @@ export const menuData = {
       name: 'Lamb Chops',
       description: 'Herb-crusted lamb chops, mint jus, garlic potatoes, grilled vegetables',
       price: 38.99,
-      image: '/images/Lamb_Chops.png',
+      image: getImagePath('images/Lamb_Chops.png'),
       category: 'Mains'
-    }
+    },
   ],
   pasta: [
     {
@@ -65,7 +67,7 @@ export const menuData = {
       name: 'Burrata Pasta',
       description: 'House-made pasta with fresh burrata, cherry tomatoes, basil, olive oil',
       price: 22.99,
-      image: '/images/pasta_dish_1768588173101.png',
+      image: getImagePath('images/pasta_dish_1768588173101.png'),
       category: 'Pasta'
     },
     {
@@ -73,7 +75,7 @@ export const menuData = {
       name: 'Truffle Carbonara',
       description: 'Creamy carbonara with crispy pancetta, parmesan, black truffle',
       price: 24.99,
-      image: '/images/Truffle_Carbonara.png',
+      image: getImagePath('images/Truffle_Carbonara.png'),
       category: 'Pasta'
     },
     {
@@ -81,7 +83,7 @@ export const menuData = {
       name: 'Seafood Linguine',
       description: 'Fresh shrimp, mussels, clams in white wine garlic sauce',
       price: 28.99,
-      image: '/images/Seafood_Linguine.png',
+      image: getImagePath('images/Seafood_Linguine.png'),
       category: 'Pasta'
     }
   ],
@@ -91,7 +93,7 @@ export const menuData = {
       name: 'Molten Chocolate Lava Cake',
       description: 'Warm chocolate cake with liquid center, vanilla ice cream, fresh berries',
       price: 10.99,
-      image: '/images/dessert_chocolate_1768588214490.png',
+      image: getImagePath('images/dessert_chocolate_1768588214490.png'),
       category: 'Desserts'
     },
     {
@@ -99,7 +101,7 @@ export const menuData = {
       name: 'Tiramisu',
       description: 'Classic Italian dessert with espresso-soaked ladyfingers, mascarpone',
       price: 9.99,
-      image: '/images/Tiramisu.png',
+      image: getImagePath('images/Tiramisu.png'),
       category: 'Desserts'
     },
     {
@@ -107,7 +109,7 @@ export const menuData = {
       name: 'Crème Brûlée',
       description: 'Vanilla bean custard with caramelized sugar crust',
       price: 8.99,
-      image: '/images/creme_brulee.png',
+      image: getImagePath('images/creme_brulee.png'),
       category: 'Desserts'
     }
   ],
@@ -117,7 +119,7 @@ export const menuData = {
       name: 'House Wine Selection',
       description: 'Red, White, or Rosé - Ask server for today\'s featured wines',
       price: 12.00,
-      image: '/images/house_wine.png',
+      image: getImagePath('images/house_wine.png'),
       category: 'Beverages'
     },
     {
@@ -125,7 +127,7 @@ export const menuData = {
       name: 'Craft Cocktails',
       description: 'Mixologist special creations - Old Fashioned, Martini, Mojito',
       price: 14.00,
-      image: '/images/craft_cocktails.png',
+      image: getImagePath('images/craft_cocktails.png'),
       category: 'Beverages'
     },
     {
@@ -133,7 +135,7 @@ export const menuData = {
       name: 'Fresh Juices',
       description: 'Orange, Apple, Cranberry, or Fresh Lemonade',
       price: 5.00,
-      image: '/images/fresh_juices.png',
+      image: getImagePath('images/fresh_juices.png'),
       category: 'Beverages'
     }
   ]

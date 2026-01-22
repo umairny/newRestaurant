@@ -12,7 +12,7 @@ const Home = () => {
             <section className="hero">
                 <div className="hero-content">
                     <div className="hero-icon">
-                        <img src="/images/restaurant_logo.png" alt="Tastebud" className="logo-image-home" />
+                        <img src={`${import.meta.env.BASE_URL}images/restaurant_logo.png`} alt="Tastebud" className="logo-image-home" />
                     </div>
 
                     <h1 className="hero-title">Tastebud</h1>
@@ -60,7 +60,7 @@ const Home = () => {
                                 <h3>SEE WHAT OTHERS ARE SAYING</h3>
                                 <p>Read reviews from our delighted guests</p>
                             </div>
-                            <img src="/images/pasta_dish_1768588173101.png" alt="Reviews" className="img-cover" />
+                            <img src={`${import.meta.env.BASE_URL}images/pasta_dish_1768588173101.png`} alt="Reviews" className="img-cover" />
                         </Link>
 
                         <Link to="/reservations" className="action-card glass-card">
@@ -68,7 +68,7 @@ const Home = () => {
                                 <h3>MAKE A RESERVATION</h3>
                                 <p>Book your table for an unforgettable experience</p>
                             </div>
-                            <img src="/images/grilled_chicken_1768588186487.png" alt="Reservations" className="img-cover" />
+                            <img src={`${import.meta.env.BASE_URL}images/grilled_chicken_1768588186487.png`} alt="Reservations" className="img-cover" />
                         </Link>
                     </div>
                 </div>
