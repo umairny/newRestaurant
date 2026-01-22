@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Utensils, Menu as MenuIcon, Star, Phone, Info, Calendar, X, Home } from 'lucide-react';
+import logo from '../assets/images/restaurant_logo.png';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -27,7 +28,7 @@ const Sidebar = () => {
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-logo">
                     <Link to="/" onClick={() => setIsOpen(!isOpen)}>
-                        <img src="/images/restaurant_logo.png" alt="Tastebud" className="logo-image" />
+                        <img src={logo} alt="Tastebud" className="logo-image" />
                     </Link>
                     <h2 className="logo-text">Tastebud</h2>
                     <p className="logo-subtitle">WHERE EVERY DISH TELLS A STORY</p>

@@ -1,4 +1,20 @@
-const getImagePath = (path) => `${import.meta.env.BASE_URL}${path.startsWith('/') ? path.slice(1) : path}`;
+// Import images
+import mediterraneanPlatter from '../assets/images/appetizer_platter_1768588200466.png';
+import capreseSalad from '../assets/images/Caprese_Salad.png';
+import lobsterBisque from '../assets/images/Lobster_Bisque.png';
+import primeRibeye from '../assets/images/steak_main_dish_1768588159526.png';
+import grilledChicken from '../assets/images/grilled_chicken_1768588186487.png';
+import panSearedSalmon from '../assets/images/Pan-Seared_Salmon.png';
+import lambChops from '../assets/images/Lamb_Chops.png';
+import burrataPasta from '../assets/images/pasta_dish_1768588173101.png';
+import truffleCarbonara from '../assets/images/Truffle_Carbonara.png';
+import seafoodLinguine from '../assets/images/Seafood_Linguine.png';
+import moltenCake from '../assets/images/dessert_chocolate_1768588214490.png';
+import tiramisu from '../assets/images/Tiramisu.png';
+import cremeBrulee from '../assets/images/creme_brulee.png';
+import houseWine from '../assets/images/house_wine.png';
+import craftCocktails from '../assets/images/craft_cocktails.png';
+import freshJuices from '../assets/images/fresh_juices.png';
 
 export const menuData = {
   starters: [
@@ -7,7 +23,7 @@ export const menuData = {
       name: 'Mediterranean Platter',
       description: 'Artisan bruschetta, imported cheeses, cured meats, and marinated olives with fresh herbs',
       price: 18.99,
-      image: getImagePath('images/appetizer_platter_1768588200466.png'),
+      image: mediterraneanPlatter,
       category: 'Starters'
     },
     {
@@ -15,7 +31,7 @@ export const menuData = {
       name: 'Caprese Salad',
       description: 'Fresh mozzarella, heirloom tomatoes, basil, balsamic reduction',
       price: 12.99,
-      image: getImagePath('images/Caprese_Salad.png'),
+      image: capreseSalad,
       category: 'Starters'
     },
     {
@@ -23,7 +39,7 @@ export const menuData = {
       name: 'Lobster Bisque',
       description: 'Creamy lobster soup with cognac, finished with crème fraîche',
       price: 14.99,
-      image: getImagePath('images/Lobster_Bisque.png'),
+      image: lobsterBisque,
       category: 'Starters'
     }
   ],
@@ -33,7 +49,7 @@ export const menuData = {
       name: 'Prime Ribeye Steak',
       description: 'Premium 12oz ribeye, herb-roasted mushrooms, asparagus, truffle mashed potatoes',
       price: 42.99,
-      image: getImagePath('images/steak_main_dish_1768588159526.png'),
+      image: primeRibeye,
       category: 'Mains'
     },
     {
@@ -41,7 +57,7 @@ export const menuData = {
       name: 'Herb-Grilled Chicken',
       description: 'Succulent chicken breast with seasonal vegetables, balsamic glaze',
       price: 26.99,
-      image: getImagePath('images/grilled_chicken_1768588186487.png'),
+      image: grilledChicken,
       category: 'Mains'
     },
     {
@@ -49,7 +65,7 @@ export const menuData = {
       name: 'Pan-Seared Salmon',
       description: 'Atlantic salmon, lemon butter sauce, quinoa, roasted vegetables',
       price: 32.99,
-      image: getImagePath('images/Pan-Seared_Salmon.png'),
+      image: panSearedSalmon,
       category: 'Mains'
     },
     {
@@ -57,9 +73,9 @@ export const menuData = {
       name: 'Lamb Chops',
       description: 'Herb-crusted lamb chops, mint jus, garlic potatoes, grilled vegetables',
       price: 38.99,
-      image: getImagePath('images/Lamb_Chops.png'),
+      image: lambChops,
       category: 'Mains'
-    },
+    }
   ],
   pasta: [
     {
@@ -67,7 +83,7 @@ export const menuData = {
       name: 'Burrata Pasta',
       description: 'House-made pasta with fresh burrata, cherry tomatoes, basil, olive oil',
       price: 22.99,
-      image: getImagePath('images/pasta_dish_1768588173101.png'),
+      image: burrataPasta,
       category: 'Pasta'
     },
     {
@@ -75,7 +91,7 @@ export const menuData = {
       name: 'Truffle Carbonara',
       description: 'Creamy carbonara with crispy pancetta, parmesan, black truffle',
       price: 24.99,
-      image: getImagePath('images/Truffle_Carbonara.png'),
+      image: truffleCarbonara,
       category: 'Pasta'
     },
     {
@@ -83,7 +99,7 @@ export const menuData = {
       name: 'Seafood Linguine',
       description: 'Fresh shrimp, mussels, clams in white wine garlic sauce',
       price: 28.99,
-      image: getImagePath('images/Seafood_Linguine.png'),
+      image: seafoodLinguine,
       category: 'Pasta'
     }
   ],
@@ -93,7 +109,7 @@ export const menuData = {
       name: 'Molten Chocolate Lava Cake',
       description: 'Warm chocolate cake with liquid center, vanilla ice cream, fresh berries',
       price: 10.99,
-      image: getImagePath('images/dessert_chocolate_1768588214490.png'),
+      image: moltenCake,
       category: 'Desserts'
     },
     {
@@ -101,7 +117,7 @@ export const menuData = {
       name: 'Tiramisu',
       description: 'Classic Italian dessert with espresso-soaked ladyfingers, mascarpone',
       price: 9.99,
-      image: getImagePath('images/Tiramisu.png'),
+      image: tiramisu,
       category: 'Desserts'
     },
     {
@@ -109,7 +125,7 @@ export const menuData = {
       name: 'Crème Brûlée',
       description: 'Vanilla bean custard with caramelized sugar crust',
       price: 8.99,
-      image: getImagePath('images/creme_brulee.png'),
+      image: cremeBrulee,
       category: 'Desserts'
     }
   ],
@@ -119,7 +135,7 @@ export const menuData = {
       name: 'House Wine Selection',
       description: 'Red, White, or Rosé - Ask server for today\'s featured wines',
       price: 12.00,
-      image: getImagePath('images/house_wine.png'),
+      image: houseWine,
       category: 'Beverages'
     },
     {
@@ -127,7 +143,7 @@ export const menuData = {
       name: 'Craft Cocktails',
       description: 'Mixologist special creations - Old Fashioned, Martini, Mojito',
       price: 14.00,
-      image: getImagePath('images/craft_cocktails.png'),
+      image: craftCocktails,
       category: 'Beverages'
     },
     {
@@ -135,7 +151,7 @@ export const menuData = {
       name: 'Fresh Juices',
       description: 'Orange, Apple, Cranberry, or Fresh Lemonade',
       price: 5.00,
-      image: getImagePath('images/fresh_juices.png'),
+      image: freshJuices,
       category: 'Beverages'
     }
   ]
